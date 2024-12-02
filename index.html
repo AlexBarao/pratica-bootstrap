@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Nordeste</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+                header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .carousel-item img{
+            margin-top: 20px;
+            height: 750px;
+            width: 100%;
+            object-fit:scale-down;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Destinos de Verão
+                </a>
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link active" href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#passeios">Passeios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="carousel-control" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="./Delta.jpg" alt="slide1">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./Jericoacoara.jpg" alt="slide2">
+            </div >
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./Morro de São Paulo.jpg" alt="slide3">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="./Trancoso.jpg" alt="slide3">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-control" data-bs-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>   
+        <button data-bs-target="#carousel-control" data-bs-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </button>   
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-control" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-control" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-control" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    
+    <div id="passeios" class="container">
+        <h2>Passeios</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card text-bg-info">
+                    <header class="card-header">
+                        Delta do Parnaíba
+                    </header>
+                    <img src="./Delta.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Delta do Parnaíba</h4>
+                        <p class="card-text">O segundo maior delta em mar aberto do mundo.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Atualizado em <time>02 de dezembro de 2024</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card text-bg-info">
+                    <header class="card-header">
+                        Vila de Jericoacoara
+                    </header>
+                    <img src="./Jericoacoara.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Vila de Jericoacoara</h4>
+                        <p class="card-text">Vila pacata com passeios deslumbrantes em meio ao Ceará.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Atualizado em <time>02 de dezembro de 2024</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card text-bg-info">
+                    <header class="card-header">
+                        Morro de São Paulo
+                    </header>
+                    <img src="./Morro de São Paulo.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Morro de São Paulo</h4>
+                        <p class="card-text">Ilha nos arredores de Salvador, destino não tão famoso mas igualmente lindo.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Atualizado em <time>02 de dezembro de 2024</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card text-bg-info">
+                    <header class="card-header">
+                        Trancoso
+                    </header>
+                    <img src="./Trancoso.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Trancoso</h4>
+                        <p class="card-text">Ilha nos arredores de Salvador, destino não tão famoso mas igualmente lindo.</p>
+                        <a href="#" class="btn btn-success">Saiba mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Atualizado em <time>02 de dezembro de 2024</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2024 todos os direitos reservados - Destinos de Verão -  
+        </div>
+    </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
